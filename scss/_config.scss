@@ -1,0 +1,63 @@
+$main-color: #000000;
+$text-color: #fff;
+$text: 'Work Sans';
+$secondary-color: #1A1A1A;
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $text;
+}
+
+.button {
+    margin-top: 4rem;
+    
+    a {
+        color: $text-color;
+        font-size: 1.3rem;
+        text-decoration: none;
+        border: 1px solid $text-color;
+        padding: .5rem 1rem;
+        border-radius: 20px;
+        transition: all .15s ease-in;
+
+        &:hover {
+            color: $main-color;
+            background-color: $text-color;
+        }
+    }
+}
+
+@media screen and (min-width:2000px) and (max-width:3000px) {
+
+    .button {
+        
+        a {
+            font-size: 2rem !important;
+        }
+    }
+}
+
+h1 {
+    color: $text-color;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+    padding: .5rem;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all .15s ease-in;
+
+    &:hover {
+        filter: none;
+        transform: scale(1.05);
+    }
+}

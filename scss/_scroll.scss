@@ -1,0 +1,28 @@
+.scroll {
+    width: 30px;
+    animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+
+    0% { /* from */
+        transform: translateY(0px);
+    } 
+    
+    100% { /* to */ 
+        transform: translateY(20px);
+    }
+}
+
+.scroll-box {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    align-items: centers;
+    justify-content: center;
+    width: 100%;
+
+    img {
+        width: 3rem;
+    }
+}

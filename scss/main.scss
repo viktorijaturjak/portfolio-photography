@@ -1,0 +1,491 @@
+@import 'config';
+@import 'scroll';
+@import 'navigation';
+
+// SHOWCASE
+
+.showcase {
+    height: 100vh;
+    background-image: url(../img/blackandwhite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    .showcase-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+
+        .main-heading {
+            color: $text-color;
+            text-shadow: 1px 1px 2px #000000;
+            font-size: 5rem;
+            letter-spacing: 0.06em;
+    
+            .txt-type {
+                color: $text-color;
+            }
+        }
+    
+        .showcase-text {
+            color: $text-color;
+            text-shadow: 1px 1px 2px #000000;
+            font-size: 1.7rem;
+            padding-top: 2rem;
+        }
+    }
+    
+    .showcase-wrapper {
+        padding: 2rem 4rem;
+    }
+
+    @media screen and (min-width:300px) and (max-width:950px) {
+
+        .showcase-content {
+            margin-top: 10rem;
+            text-align: center;
+
+            .main-heading {
+                font-size: 2.5rem;
+            }
+
+            .showcase-text {
+                font-size: 1.5rem;
+            }
+        }
+
+        .scroll-box {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:2000px) and (max-width:3000px) {
+
+        .showcase-content {
+
+            .main-heading {
+                font-size: 8rem;
+            }
+
+            .showcase-text {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+// END SHOWCASE
+
+// MY-WORK
+
+.my-work {
+    background-color: $main-color;
+    padding: 4rem;
+    text-align: center;
+
+    h1 {
+        padding-bottom: 4rem;
+    }
+
+    .my-work-images {
+        display: flex;
+        justify-content: space-between;
+
+        .img-box {
+            width: 25%;
+        }
+    }
+
+    @media screen and (min-width:360px) and (max-width:700px) {
+
+        .my-work-images {
+            display: block;
+
+            .img-box {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// END  MY-WORK 
+
+// ABOUT-ME
+
+.about-me {
+    height: 50vh;
+    background-image: url(../img/showcase4-black-copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .about-me-left,
+    .about-me-right {
+
+        h1 {
+            text-shadow: 1px 1px 2px #000000;
+            padding-bottom: 2rem;
+        }
+
+        p {
+            color: $text-color;
+            text-shadow: 1px 1px 2px #000000;
+            font-size: 1.5rem;
+        }
+
+        .icons-box {
+            font-size: 2.5rem;
+            color: $text-color;
+
+            a {
+
+                .fab {
+                    padding-right: .5rem;
+                }
+
+                .fa-facebook-square,
+                .fa-instagram-square,
+                .fa-twitter-square {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:950px) {
+
+    .about-me {
+        display: block;
+        height: auto;
+        text-align: center;
+
+        .about-me-left {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width:2000px) and (max-width:3000px) {
+    
+    .about-me {
+
+        .about-me-left,
+        .about-me-right {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
+
+// END ABOUT-ME 
+
+// FOOTER
+
+footer {
+    background-color: $secondary-color;
+    padding: 2rem;
+    text-align: center;
+
+    .logo {
+        padding-bottom: 1rem;
+
+        a {
+            text-decoration: none;
+        }
+        
+        .logo-text {
+            color: $text-color;
+            font-size: 4rem;
+            font-weight: 400;
+            text-shadow: 1px 1px 2px #000000;
+            z-index: 1000;
+        }
+    }
+
+    p {
+        color: $text-color;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+}
+
+.black {
+    background-color: $main-color;
+}
+
+// END FOOTER
+
+// ABOUT PAGE
+
+.about {
+    background-image: url(../img/showcase4-black.jpg);
+
+    .showcase-content-about {
+        margin-top: 10%;
+
+        h1 {
+            text-shadow: 1px 1px 2px #000000;
+            padding-bottom: 2rem;
+        }
+
+        .about-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .about-left,
+            .about-right {
+
+                p {
+                    color: $text-color;
+                    font-size: 1.5rem;
+                    text-shadow: 1px 1px 2px #000000;
+                    padding-bottom: 2rem;
+                }
+
+                .button {
+                    margin-top: 10rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:360px) and (max-width:950px) {
+
+        .showcase-content-about {
+            margin-top: 6rem;
+            text-align: center;
+
+            .about-flex {
+                display: block;
+
+                .about-left,
+                .about-right {
+                    p {
+                        font-size: 1.1rem;
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+
+                    .button {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:2000px) and (max-width:3000px) {
+
+        .showcase-content-about {
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            .about-flex {
+
+                .about-left,
+                .about-right {
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// END ABOUT PAGE
+
+// GALLERY PAGE
+
+.gallery {
+    background: $main-color;
+    height: 35vh;
+
+    .gallery-navigation {
+        text-align: center;
+        margin-top: 3rem;
+
+        ul li {
+            display: inline;
+
+            a {
+                color: $text-color;
+                font-size: 1.5rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+
+                &:hover {
+                    text-decoration: underline;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:360px) and (max-width:700px) {
+
+        .gallery-navigation {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:2000px) and (max-width:3000px) {
+
+        .gallery-navigation {
+            margin-top: 8rem;
+            
+            ul li {
+
+                a {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+.gallery-eight {
+
+    .gallery-heading {
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: .5rem;
+    }
+
+    padding: 0 4rem 6rem 4rem;
+    background-color: $main-color;
+
+    .gallery-four {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img-box {
+            width: 25%;
+        }
+    }
+
+    .button {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:700px) {
+
+    .gallery-eight {
+
+       .gallery-heading {
+           font-size: 1.7rem;
+       }
+
+       .gallery-four {
+        display: block !important;
+
+            .img-box {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.last {
+    padding-bottom: 0;
+}
+
+// END GALLERY PAGE
+
+// CONTACT PAGE
+
+.contact {
+    background-image: url(../img/photography-showcase.jpg);
+
+    .showcase-content-contact {
+        margin-top: 10%;
+
+        form {
+            padding-top: 2rem;
+
+            input {
+                width: 17rem;
+                background-color: transparent;
+                border: 1px solid $text-color;
+                border-radius: 20px;
+                padding: .5rem 1rem;
+                font-size: 1.8rem;
+                margin: 1rem 0 1rem 0;
+                color: $text-color;
+
+                &:focus {
+                    border: 1px solid $text-color;
+                }
+            }
+
+            button {
+                color: $text-color;
+                background-color: transparent;
+                font-size: 1.3rem;
+                text-decoration: none;
+                border: 1px solid $text-color;
+                padding: .5rem 1rem;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: all .15s ease-in;
+                margin-top: 3rem;
+
+                &:hover {
+                    color: $main-color;
+                    background-color: $text-color;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:360px) and (max-width:950px) {
+
+        .showcase-content-contact {
+            margin-top: 6rem;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width:2000px) and (max-width:3000px) {
+
+    .contact {
+
+        .showcase-content-contact {
+
+            h1 {
+                font-size: 7rem !important;
+            }
+
+            form {
+                
+                input {
+                    width: 30rem;
+                    height: 4rem;
+                }
+
+                button {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
