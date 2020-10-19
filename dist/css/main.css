@@ -248,8 +248,8 @@ li a:hover {
 .toggle-overlay {
   padding: 1.2rem 0;
   position: absolute;
-  right: 5rem;
-  top: .5rem;
+  right: 3rem;
+  top: .6rem;
   width: 65px;
   height: 65px;
   cursor: pointer;
@@ -427,6 +427,9 @@ li a:hover {
 }
 
 @media screen and (min-width: 360px) and (max-width: 700px) {
+  .my-work {
+    padding: 2rem 1rem 4rem 1rem !important;
+  }
   .my-work .my-work-images {
     display: block;
   }
@@ -598,6 +601,10 @@ footer p {
   .about .showcase-content-about .about-flex .about-right .button {
     margin-top: 0;
   }
+  .about .showcase-content-about .about-flex .about-left br,
+  .about .showcase-content-about .about-flex .about-right br {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 2000px) and (max-width: 3000px) {
@@ -683,6 +690,9 @@ footer p {
 }
 
 @media screen and (min-width: 360px) and (max-width: 700px) {
+  .gallery-eight {
+    padding: 0 1rem !important;
+  }
   .gallery-eight .gallery-heading {
     font-size: 1.7rem;
   }
@@ -736,7 +746,7 @@ footer p {
   cursor: pointer;
   -webkit-transition: all .15s ease-in;
   transition: all .15s ease-in;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .contact .showcase-content-contact form button:hover {
