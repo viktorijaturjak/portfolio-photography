@@ -442,6 +442,20 @@ footer {
                 }
             }
 
+            textarea {
+                width: 17rem;
+                height: 3.5rem;
+                margin-top: 1rem;
+                background-color: transparent;
+                border: 1px solid $text-color;
+                border-radius: 20px;
+                padding-top: .5rem;
+                padding-left: 1rem;
+                font-size: 1.8rem;
+                resize: none;
+                color: $text-color;
+            }
+
             button {
                 color: $text-color;
                 background-color: transparent;

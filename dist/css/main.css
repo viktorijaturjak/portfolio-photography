@@ -735,6 +735,20 @@ footer p {
   border: 1px solid #fff;
 }
 
+.contact .showcase-content-contact form textarea {
+  width: 17rem;
+  height: 3.5rem;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding-top: .5rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  resize: none;
+  color: #fff;
+}
+
 .contact .showcase-content-contact form button {
   color: #fff;
   background-color: transparent;
