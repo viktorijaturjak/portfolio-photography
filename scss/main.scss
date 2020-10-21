@@ -59,7 +59,7 @@
         }
     }
 
-    @media screen and (min-width:2000px) and (max-width:3000px) {
+    @media screen and (min-width:2000px){
 
         .showcase-content {
 
@@ -171,7 +171,7 @@
     }
 }
 
-@media screen and (min-width:2000px) and (max-width:3000px) {
+@media screen and (min-width:2000px) {
     
     .about-me {
 
@@ -293,7 +293,7 @@ footer {
         }
     }
 
-    @media screen and (min-width:2000px) and (max-width:3000px) {
+    @media screen and (min-width:2000px) {
 
         .showcase-content-about {
 
@@ -350,7 +350,7 @@ footer {
         }
     }
 
-    @media screen and (min-width:2000px) and (max-width:3000px) {
+    @media screen and (min-width:2000px) {
 
         .gallery-navigation {
             margin-top: 8rem;
@@ -438,7 +438,7 @@ footer {
                 color: $text-color;
 
                 &:focus {
-                    border: 1px solid $text-color;
+                    outline: none;
                 }
             }
 
@@ -454,6 +454,10 @@ footer {
                 font-size: 1.8rem;
                 resize: none;
                 color: $text-color;
+
+                &:focus {
+                    outline: none;
+                }
             }
 
             button {
@@ -485,7 +489,7 @@ footer {
     }
 }
 
-@media screen and (min-width:2000px) and (max-width:3000px) {
+@media screen and (min-width:2000px) {
 
     .contact {
 
@@ -498,6 +502,11 @@ footer {
             form {
                 
                 input {
+                    width: 30rem;
+                    height: 4rem;
+                }
+
+                textarea {
                     width: 30rem;
                     height: 4rem;
                 }

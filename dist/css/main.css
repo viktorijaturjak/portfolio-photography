@@ -394,7 +394,7 @@ li a:hover {
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2000px) {
   .showcase .showcase-content .main-heading {
     font-size: 8rem;
   }
@@ -500,7 +500,7 @@ li a:hover {
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2000px) {
   .about-me .about-me-left h1,
   .about-me .about-me-right h1 {
     font-size: 4rem;
@@ -607,7 +607,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2000px) {
   .about .showcase-content-about h1 {
     font-size: 4rem;
   }
@@ -649,7 +649,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2000px) {
   .gallery .gallery-navigation {
     margin-top: 8rem;
   }
@@ -732,7 +732,7 @@ footer p {
 }
 
 .contact .showcase-content-contact form input:focus {
-  border: 1px solid #fff;
+  outline: none;
 }
 
 .contact .showcase-content-contact form textarea {
@@ -747,6 +747,10 @@ footer p {
   font-size: 1.8rem;
   resize: none;
   color: #fff;
+}
+
+.contact .showcase-content-contact form textarea:focus {
+  outline: none;
 }
 
 .contact .showcase-content-contact form button {
@@ -775,11 +779,15 @@ footer p {
   }
 }
 
-@media screen and (min-width: 2000px) and (max-width: 3000px) {
+@media screen and (min-width: 2000px) {
   .contact .showcase-content-contact h1 {
     font-size: 7rem !important;
   }
   .contact .showcase-content-contact form input {
+    width: 30rem;
+    height: 4rem;
+  }
+  .contact .showcase-content-contact form textarea {
     width: 30rem;
     height: 4rem;
   }
