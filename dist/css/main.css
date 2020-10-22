@@ -139,6 +139,7 @@ main .logo a {
 main .logo h1 {
   color: #fff;
   font-size: 4rem;
+  margin-left: -2rem;
 }
 
 aside {
@@ -248,7 +249,7 @@ li a:hover {
 .toggle-overlay {
   padding: 1.2rem 0;
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: .6rem;
   width: 65px;
   height: 65px;
